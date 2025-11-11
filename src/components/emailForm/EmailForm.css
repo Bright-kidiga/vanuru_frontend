@@ -1,0 +1,70 @@
+.email-form-container {
+    background: white;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+/* Push title fully to the left */
+.email-form-heading {
+    color: #1E1E1E;
+    padding: 2rem;
+    margin-left: 0;
+    align-self: flex-start;
+}
+
+/* Form layout */
+.email-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+}
+
+/* Inputs */
+.email-input,
+.email-textarea {
+    width: 80%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #1E1E1E;
+    color: #1E1E1E;
+    padding: 0.3rem 1rem;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Placeholder styling */
+.email-input::placeholder,
+.email-textarea::placeholder {
+    color: #1E1E1E;
+    text-align: left;
+    opacity: 0.7;
+}
+
+.email-textarea {
+    text-align: left;
+}
+
+/* Submit button → far right */
+.email-submit {
+    margin-left: auto; /* pushes button to the right */
+    padding: 1rem 3rem;
+    border: none;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 0;
+}
+
+.email-submit:hover {
+    background-color: rgba(30, 30, 30, 1);
+}
+
+/* Status message */
+.email-status {
+    margin-top: 15px;
+    color: #1E1E1E;
+    font-weight: bold;
+}
