@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Hero.css";
 import logo from "../../../assets/logo.png";
-import vanessa from "../../../assets/founders/vanessa.png"
+import vanessa from "../../../assets/founders/vanessa.png";
+import timothy from "../../../assets/founders/tim.png";
 import Card from "../../../components/Cards/Cards.tsx";
 import FooterCus from "../../../components/footer/Footer.tsx";
 import EmailForm from "../../../components/emailForm/EmailForm.tsx";
@@ -61,7 +62,7 @@ export default function Hero() {
                 {/*/>*/}
             </div>
         </section>
-            <section id="about" className="about-section">
+            <section id="about" className="hero about-section">
                 <div className="about-container">
                     <div className="about-content">
                         <p className="section-intro">
@@ -102,7 +103,7 @@ export default function Hero() {
             </section>
 
 
-            <section id="team" className="team-section">
+            <section id="team" className="hero team-section">
                 <div className="team-content">
                     <div className="team-header">
                         <h2 className="team-title">Meet the Team</h2>
@@ -125,7 +126,7 @@ export default function Hero() {
                         {/* Timothy */}
                         <div className="team-card">
                             <div className="image-wrapper">
-                                <img src={vanessa} alt="Timothy Mburu" className="team-img" />
+                                <img src={timothy} alt="Timothy Mburu" className="team-img" />
                             </div>
                             <h3>Timothy Mburu</h3>
                             <p className="role">Founder & Managing Director</p>
